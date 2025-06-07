@@ -1,0 +1,439 @@
+{
+  "id": "b22dbb77-aac1-4849-b05a-1d3c7f8b9d95",
+  "revision": 0,
+  "last_node_id": 91,
+  "last_link_id": 173,
+  "nodes": [
+    {
+      "id": 86,
+      "type": "FluxProKontextTextToImage_fal",
+      "pos": [
+        896.612548828125,
+        1153.0489501953125
+      ],
+      "size": [
+        400,
+        256
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            170
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FluxProKontextTextToImage_fal"
+      },
+      "widgets_values": [
+        "画一只橘猫",
+        "16:9",
+        "png",
+        "2",
+        false,
+        1143414384,
+        "randomize",
+        "flux-kontext-pro"
+      ]
+    },
+    {
+      "id": 88,
+      "type": "FluxProKontextMulti_fal",
+      "pos": [
+        902.7951049804688,
+        1481.60400390625
+      ],
+      "size": [
+        400,
+        316
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image_1",
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 171
+        },
+        {
+          "label": "image_2",
+          "name": "image_2",
+          "type": "IMAGE",
+          "link": 173
+        },
+        {
+          "label": "image_3",
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "label": "image_4",
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            172
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FluxProKontextMulti_fal"
+      },
+      "widgets_values": [
+        "猫咪抱着奖杯",
+        "16:9",
+        "png",
+        "2",
+        false,
+        3563269517,
+        "randomize",
+        "flux-kontext-pro"
+      ]
+    },
+    {
+      "id": 83,
+      "type": "FluxProKontext_fal",
+      "pos": [
+        903.6834716796875,
+        763.291748046875
+      ],
+      "size": [
+        400,
+        256
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 168
+        }
+      ],
+      "outputs": [
+        {
+          "label": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            169
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FluxProKontext_fal"
+      },
+      "widgets_values": [
+        "大笑的猫咪",
+        "16:9",
+        "png",
+        "2",
+        false,
+        874031432,
+        "randomize",
+        "flux-kontext-pro"
+      ]
+    },
+    {
+      "id": 90,
+      "type": "LoadImage",
+      "pos": [
+        629.7176513671875,
+        1481.3514404296875
+      ],
+      "size": [
+        253.75880432128906,
+        326
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            173
+          ]
+        },
+        {
+          "label": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.34",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "wechat_2025-05-16_145219_761.png",
+        "image"
+      ]
+    },
+    {
+      "id": 89,
+      "type": "LoadImage",
+      "pos": [
+        362.19403076171875,
+        1483.35546875
+      ],
+      "size": [
+        253.75880432128906,
+        326
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            171
+          ]
+        },
+        {
+          "label": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.34",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "2.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 87,
+      "type": "PreviewImage",
+      "pos": [
+        1318.9063720703125,
+        1160.2503662109375
+      ],
+      "size": [
+        314.86358642578125,
+        246
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "图像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 170
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.34",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 91,
+      "type": "PreviewImage",
+      "pos": [
+        1328.7618408203125,
+        1488.4442138671875
+      ],
+      "size": [
+        297.9825439453125,
+        299.6395568847656
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "图像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 172
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.34",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 85,
+      "type": "PreviewImage",
+      "pos": [
+        1324.2197265625,
+        763.381103515625
+      ],
+      "size": [
+        320.27728271484375,
+        269.0765686035156
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "图像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 169
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.34",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 84,
+      "type": "LoadImage",
+      "pos": [
+        606.3552856445312,
+        763.8994750976562
+      ],
+      "size": [
+        268.8907165527344,
+        326
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "label": "图像",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            168
+          ]
+        },
+        {
+          "label": "遮罩",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.34",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "2.jpg",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      168,
+      84,
+      0,
+      83,
+      0,
+      "IMAGE"
+    ],
+    [
+      169,
+      83,
+      0,
+      85,
+      0,
+      "IMAGE"
+    ],
+    [
+      170,
+      86,
+      0,
+      87,
+      0,
+      "IMAGE"
+    ],
+    [
+      171,
+      89,
+      0,
+      88,
+      0,
+      "IMAGE"
+    ],
+    [
+      172,
+      88,
+      0,
+      91,
+      0,
+      "IMAGE"
+    ],
+    [
+      173,
+      90,
+      0,
+      88,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.9832405956932415,
+      "offset": [
+        -514.4724988781423,
+        -605.0656974029652
+      ]
+    },
+    "frontendVersion": "1.19.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
