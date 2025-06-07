@@ -26,7 +26,7 @@ TuZi API - Flux Kontext 节点是一个自定义的 ComfyUI 扩展，提供强�
 
 ### 📁 配置文件
 
-在插件目录中创建 `config.ini` 文件，填入您的 API 密钥：
+在插件目录中打开 `config.ini` 文件，填入您的 API 密钥：
 
 ```ini
 [API]
