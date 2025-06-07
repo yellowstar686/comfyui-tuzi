@@ -1,15 +1,17 @@
 [project]
-name = "tuzi-api"
-description = "tu-zi API:Comfyui-tuzi-FluxProKontext"
-version = "1.0.3"
+name = "comfyui-tuzi-flux_kontext"
+description = "兔子API接入comfyui"
+version = "1.0.0"
 license = {file = "LICENSE"}
-dependencies = ["fal-client", "torch"]
+dependencies = ["torch"]
 
 [project.urls]
-Repository = "https://github.com/gokayfem/ComfyUI-fal-API"
+Repository = "https://github.com/yellowstar686/tuzi-api"
+Issues = "https://github.com/yellowstar686/tuzi-api/issues"
+Documentation = "https://github.com/yellowstar686/tuzi-api/blob/main/README.md"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "gokayfem"
-DisplayName = "ComfyUI-fal-API"
+PublisherId = "yellowstar686"
+DisplayName = "TuZi API - Flux Kontext Nodes"
 Icon = ""
