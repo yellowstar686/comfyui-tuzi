@@ -1,17 +1,43 @@
 [project]
-name = "comfyui-tuzi-flux_kontext"
-description = "兔子API接入comfyui"
+name = "comfyui-tuzi-flux-kontext"  
+description = "兔子API接入ComfyUI - 支持Flux Pro Kontext图像生成节点"
 version = "1.0.0"
 license = {file = "LICENSE"}
-dependencies = ["torch"]
+dependencies = [
+    "torch", 
+    "requests",     
+    "Pillow",      
+    "numpy"         
+]
 
 [project.urls]
 Repository = "https://github.com/yellowstar686/tuzi-api"
 Issues = "https://github.com/yellowstar686/tuzi-api/issues"
 Documentation = "https://github.com/yellowstar686/tuzi-api/blob/main/README.md"
-#  Used by Comfy Registry https://comfyregistry.org
+
 
 [tool.comfy]
 PublisherId = "yellowstar686"
 DisplayName = "TuZi API - Flux Kontext Nodes"
 Icon = ""
+
+
+[project]
+requires-python = ">=3.8"
+
+
+keywords = ["comfyui", "flux", "kontext", "image-generation", "ai", "tuzi"]
+
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
