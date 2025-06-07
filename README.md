@@ -19,7 +19,7 @@ TuZi API - Flux Kontext 节点是一个自定义的 ComfyUI 扩展，提供强�
 
 ### 🔑 API 密钥设置
 
-您需要获取两个 API 密钥：
+您需要获取两个 API 密钥，打开config.ini文件：
 
 1. **TuZi API 密钥**: 从 [兔子API控制台](https://api.tu-zi.com/panel) 获取
 2. **ImgBB API 密钥**: 从 [ImgBB](https://imgbb.com/) 获取
