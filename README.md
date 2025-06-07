@@ -1,34 +1,30 @@
-# TuZi API - Flux Kontext Nodes
+TuZi API - Flux Kontext Nodes
+English | 中文
 
-[English](#english) | [中文](#中文)
-
----
-
-## English
-
-### 🚀 Overview
-
+English
+🚀 Overview
 TuZi API - Flux Kontext Nodes is a custom ComfyUI extension that provides powerful Flux Pro Kontext image generation capabilities. This project is adapted from the fal_api project and currently uses ImgBB for image uploading and integration.
 
-### ⚠️ Important Notice
-
-- **Image Upload**: Currently uses ImgBB for image uploading (temporary solution)
-- **Free Tier Limit**: Non-member accounts can upload 100 images per hour for free
-- **API Keys Required**: Both TuZi API key and ImgBB API key are required
-- **Future Update**: Will be updated once TuZi supports base64 image upload
-
-### 🔑 API Keys Setup
-
+⚠️ Important Notice
+Image Upload: Currently uses ImgBB for image uploading (temporary solution)
+Free Tier Limit: Non-member accounts can upload 100 images per hour for free
+API Keys Required: Both TuZi API key and ImgBB API key are required
+Future Update: Will be updated once TuZi supports base64 image upload
+🔑 API Keys Setup
 You need to obtain two API keys:
 
-1. **TuZi API Key**: Get from [TuZi API Panel](https://api.tu-zi.com/panel)
-2. **ImgBB API Key**: Get from [ImgBB](https://imgbb.com/)
+TuZi API Key: Get from TuZi API Panel
+ImgBB API Key: Get from ImgBB
+📁 Configuration
+Create a config.ini file in the plugin directory with your API keys:
 
-### 📁 Configuration
 
-Create a `config.ini` file in the plugin directory with your API keys:
-
-```ini
+折叠
+保存
+复制
+1
+2
+3
 [API]
 API_KEY = your_tuzi_api_key_here
 IMGBB_API_KEY = your_imgbb_api_key_here
@@ -39,10 +35,14 @@ Click "Install via Git URL"
 Enter: https://github.com/yellowstar686/tuzi-api.git
 Restart ComfyUI after installation
 Method 2: Manual Installation
-cd ComfyUI/custom_nodes
-git clone https://github.com/yellowstar686/tuzi-api.git
-cd tuzi-api
-pip install -r requirements.txt
+
+折叠
+保存
+复制
+1
+2
+3
+4
 cd ComfyUI/custom_nodes
 git clone https://github.com/yellowstar686/tuzi-api.git
 cd tuzi-api
@@ -137,6 +137,13 @@ ImgBB API 密钥: 从 ImgBB 获取
 📁 配置文件
 在插件目录中创建 config.ini 文件，填入您的 API 密钥：
 
+
+折叠
+保存
+复制
+1
+2
+3
 [API]
 API_KEY = 您的兔子API密钥
 IMGBB_API_KEY = 您的ImgBB_API密钥
@@ -147,10 +154,14 @@ IMGBB_API_KEY = 您的ImgBB_API密钥
 输入：https://github.com/yellowstar686/tuzi-api.git
 安装完成后重启 ComfyUI
 方法二：手动安装
-cd ComfyUI/custom_nodes
-git clone https://github.com/yellowstar686/tuzi-api.git
-cd tuzi-api
-pip install -r requirements.txt
+
+折叠
+保存
+复制
+1
+2
+3
+4
 cd ComfyUI/custom_nodes
 git clone https://github.com/yellowstar686/tuzi-api.git
 cd tuzi-api
